@@ -1,0 +1,16 @@
+@keyframes timer {
+	from {
+		transform: none;
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes timer {
+	from {
+		-webkit-transform: none;
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
