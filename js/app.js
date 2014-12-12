@@ -5,24 +5,28 @@ var todasPerguntas = ["Q2l0ZSAzIGJsYSBibGEgYmxh", "Q2l0ZSAzIHRlZWVlZWVlc3Rl", "Q
 		document.getElementById("pergunta").innerHTML = ret;
 	}, 
 	timer = function() {
-		var time = document.getElementById('timer'),
-			play = document.getElementById('comecar'), 
-			newp = document.getElementById('new');
-		play.removeEventListener('mousedown', timer);
-		newp.removeEventListener('mousedown', sortear);
-		play.className = "comecar inactive";
-		time.className = "timer animated";
-		newp.className = "new inactive";
+		var time = document.getElementById('timer-img'),
+			play = document.getElementById('vai'), 
+			newp = document.getElementById('perguntar');
+			play_inactive = document.getElementById('indo'), 
+			newp_inactive = document.getElementById('perguntou');
+		play.style.display = "none";
+		newp.style.display = "none";
+		play_inactive.style.display = "block";
+		newp_inactive.style.display = "block";
+		time.className = "animated";
 		setTimeout(function(){
-			time.className = "timer";
-			play.className = "comecar active";
-			newp.className = "new active";
+			play.style.display = "block";
+			newp.style.display = "block";
+			play_inactive.style.display = "none";
+			newp_inactive.style.display = "none";
+			time.className = "";
 			addEvent();
 		}, 10000);
-	},
-	addEvent = function() {
-		document.getElementById('comecar').addEventListener('mousedown', timer);
-		document.getElementById('new').addEventListener('mousedown', sortear);
+	}, 
+	addEvent =  function () {
+		document.getElementById('vai').addEventListener('mousedown', timer);
+		document.getElementById('perguntar').addEventListener('mousedown', sortear);
 	};
 sortear(perguntas);
 addEvent();
