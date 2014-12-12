@@ -24,8 +24,11 @@ body {
 	width: 100%;
 	border-radius: 10%;
 }
+.timer img {
+	width: 20%;
+}
 .buttons {
-	width: 30%;
+	width: 20%;
 	padding-top: 3%;
 	display: inline-table;
 }
@@ -36,4 +39,19 @@ body {
 }
 .indo {
 	display: none;
+}
+@media (max-width: 850px) {
+	.timer img, .buttons {
+		width: 30%;
+	}
+}
+@media (max-width: 770px) {
+	.timer img, .buttons {
+		width: 40%;
+	}
+}
+@media (max-width: 550px) {
+	.timer img, .buttons {
+		width: 60%;
+	}
 }
