@@ -48,14 +48,25 @@ body {
 	.timer img, .buttons {
 		width: 30%;
 	}
+	.pergunta {
+		margin-top: 0;
+		margin-bottom: 0;
+		font-size: 2em;
+	}
 }
 @media (max-width: 770px) {
 	.timer img, .buttons {
 		width: 40%;
 	}
+	.pergunta {
+		font-size: 1.5em;
+	}
 }
 @media (max-width: 550px) {
 	.timer img, .buttons {
 		width: 60%;
+	}
+	.pergunta {
+		font-size: 1em;
 	}
 }
