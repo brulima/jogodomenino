@@ -1,7 +1,5 @@
 body {
 	text-align: center;
-	font-family: sans-serif;
-	font-size: 3em;
 }
 .animated {
 	animation: timer linear 10s;
@@ -10,6 +8,8 @@ body {
 .pergunta {
 	margin-top: 1%;
 	margin-bottom: 2%;
+	font-size: 3em;
+	font-family: sans-serif;
 }
 .pointer {
 	position: absolute;
@@ -49,8 +49,6 @@ body {
 		width: 30%;
 	}
 	.pergunta {
-		margin-top: 0;
-		margin-bottom: 0;
 		font-size: 2em;
 	}
 }
@@ -64,9 +62,6 @@ body {
 }
 @media (max-width: 550px) {
 	.timer img, .buttons {
-		width: 60%;
-	}
-	.pergunta {
-		font-size: 1em;
+		width: 50%;
 	}
 }
