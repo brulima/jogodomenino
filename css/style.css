@@ -7,6 +7,10 @@ body {
 	animation: timer linear 10s;
 	-webkit-animation: timer linear 10s;
 }
+.pergunta {
+	margin-top: 1%;
+	margin-bottom: 2%;
+}
 .pointer {
 	position: absolute;
 	background-color: green;
