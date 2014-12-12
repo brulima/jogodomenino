@@ -56,9 +56,6 @@ body {
 	.timer img, .buttons {
 		width: 40%;
 	}
-	.pergunta {
-		font-size: 1.5em;
-	}
 }
 @media (max-width: 550px) {
 	.timer img, .buttons {
