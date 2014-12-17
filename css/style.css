@@ -30,6 +30,7 @@ body {
 }
 .timer img {
 	width: 20%;
+	border-radius: 100%;
 }
 .buttons {
 	width: 20%;
@@ -40,6 +41,7 @@ body {
 	float: left;
 	width: 44%;
 	padding: 0 6% 0 0;
+	border-radius: 100%;
 }
 .indo {
 	display: none;
